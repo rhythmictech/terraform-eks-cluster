@@ -79,7 +79,7 @@ module "eks" {
   cluster_name                          = var.cluster_name
   subnets                               = var.subnets
   vpc_id                                = var.vpc_id
-  worker_additional_security_group_ids  = [var.worker_additional_security_group_ids]
+  worker_additional_security_group_ids  = var.worker_additional_security_group_ids
   worker_groups                         = var.worker_groups
   worker_group_count                    = "1"
   workers_group_defaults                = {
